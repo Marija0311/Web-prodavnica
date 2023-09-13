@@ -1,0 +1,591 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #fff;
+  }
+  
+  .home img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  }
+  
+  .home-text {
+  margin-top: 2rem;
+  text-align: center;
+  }
+  
+  .home-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  }
+  
+  .home-text p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  max-width: 50rem;
+  margin: 0 auto;
+  }
+
+
+
+  .katalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2rem;
+  }
+  
+  .proizvod {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    height: 600px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .proizvod:hover {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+    transform: translateY(-5px);
+  }
+  
+  .proizvod img {
+    max-width: 250px;
+    max-height: 250px;
+  }
+  
+  .proizvod h3 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .proizvod p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+  
+  .proizvod .cena {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f7b731;
+  }
+  
+
+  .detalji-proizvoda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .detalji-proizvoda img {
+    max-width: 500px;
+    margin-bottom: 20px;
+  }
+  
+  .detalji-proizvoda h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .detalji-proizvoda p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .detalji-proizvoda .proizvod-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .detalji-proizvoda .proizvod-info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  .detalji-proizvoda .label {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .detalji-proizvoda .value {
+    font-size: 24px;
+  }
+  
+  .detalji-proizvoda h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .detalji-proizvoda .review {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .detalji-proizvoda .review h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .detalji-proizvoda .review p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .detalji-proizvoda .review-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+  }
+  
+  .detalji-proizvoda .review-info-item {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .detalji-proizvoda .review-info-item .label {
+    margin-right: 5px;
+  }
+  
+
+
+
+  .star {
+    color: #ccc;
+    font-size: 1.2em;
+    margin: 0 2px;
+  }
+  
+  .star.filled {
+    color: #f5d700;
+  }
+ 
+  
+  .login-container {
+    background-image: linear-gradient(to bottom right, #F8D788, #F5C36F);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+    margin: 10% auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: black;
+  }
+  
+  h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-container {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: black;
+
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  input[type="email"]::before {
+    content: "\f0e0";
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: #ccc;
+    font-size: 16px;
+  }
+  
+  input[type="password"]::before {
+    content: "\f084";
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: #ccc;
+    font-size: 16px;
+  }
+  
+  .login-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .login-button:hover {
+    background-color: #555;
+  }
+  
+.dugme-katalog{
+  background-color: #F8D788;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.dugme-katalog:hover {
+  background-color: #f5c36f;
+}
+  .navbar {
+   
+    background-color: #F8D788;
+     
+  }
+  
+  .nav-link {
+    font-weight: 500;
+    color: #212529;
+  }
+  
+  .nav-link.active {
+    color: #0d6efd;
+  }
+  
+  .btn-outline-primary {
+    border-color: #0d6efd;
+    color: #0d6efd;
+  }
+  
+  .btn-outline-primary:hover {
+    background-color: #0d6efd;
+    color: #fff;
+  }
+  
+  .navbar-brand {
+    font-weight: 600;
+  }
+  
+  .navbar-collapse {
+    justify-content: space-between;
+  }
+  
+  .navbar-nav {
+    align-items: center;
+    margin: 0;
+  }
+  
+  .navbar-nav.me-auto {
+    margin-right: auto;
+  }
+  
+  @media (max-width: 991px) {
+    .navbar-collapse {
+      justify-content: flex-start;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .navbar-nav.me-auto {
+      margin-right: 0;
+    }
+  }
+  
+
+  #orders-table{
+    margin: 10%;
+    margin-right: 30%;
+
+  }
+
+  .add-product-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  .add-product-container h1 {
+    margin-bottom: 1rem;
+  }
+  
+  .add-product-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .add-product-container label {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .add-product-container input,
+  .add-product-container textarea,
+  .add-product-container select {
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  .add-product-container textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .add-product-container button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-product-container button:hover {
+    background-color: #155cbd;
+  }
+  
+
+
+  .edit-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+  }
+  
+  .edit-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+  
+  .edit-form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+  }
+  
+  .edit-form input,
+  .edit-form textarea,
+  .edit-form select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .edit-form input:focus,
+  .edit-form textarea:focus,
+  .edit-form select:focus {
+    border-color: #333;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .edit-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .edit-form button:hover {
+    background-color: #666;
+  }
+  
+  .nase-preporuke {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:2%
+  }
+  
+  .product-list {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  
+  .product-item {
+    width: 240px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 16px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .product-item h2 {
+    font-size: 18px;
+    margin: 0 0 12px;
+  }
+  
+  .product-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    object-position: center;
+    margin-bottom: 12px;
+  }
+  
+  .product-item p {
+    margin: 4px 0;
+    font-size: 14px;
+  }
+  
+
+  .korpa {
+    width: 100%;
+    max-width: 300px;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f8f8f8;
+    margin-top: 1rem;
+    margin-left: 40%;
+  }
+  
+  .korpa h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .korpa-proizvod {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .korpa-proizvod:last-child {
+    border-bottom: none;
+  }
+  
+  .korpa-proizvod img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 0.5rem;
+  }
+  
+  .korpa-proizvod h3 {
+    font-size: 1rem;
+    margin: 0;
+    color: #333;
+  }
+  
+  .korpa-proizvod .cena {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+
+  .recepti-container {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+  }
+  
+  .recept-kartica {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    height: 150px;
+  }
+  
+  .recept-slika {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 16px;
+  }
+  
+  .recept-tekst {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .search-input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 16px;
+  }
+  
