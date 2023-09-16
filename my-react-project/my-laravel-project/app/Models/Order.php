@@ -15,7 +15,7 @@ class Order extends Model
         'items',
     ];
 
-    protected $casts = [  //  čuvanje više proizvoda za svaku narudžbinu
+    protected $casts = [ 
         'items' => 'json',
     ];
 
